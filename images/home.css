@@ -3,14 +3,46 @@ body{
     background-color: #ffffff;
     color: #222222;
 }
-.nav-bar .logo{
-    color:rgb(255, 115, 0);
-    font-weight:bold;
-    text-decoration:none;
-    font-size: 30px; 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
-.nav-bar .logo span{
-    color:#00b3ff;
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f47b20;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+    color: #00b3ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #f47b20;
+    color: #ffffff;
 }
 .hero h1{
     font-size: 40px;
@@ -83,12 +115,79 @@ body{
         gap: 20px;
         padding: 20px 30px;
         margin-bottom: 40px;
+        background: linear-gradient(to bottom,white,rgba(255, 182, 193, 0.27));
         
     }
     .cat-cards{
         display: flex;
-        gap: 20px;
+        gap: 25px;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
+    .cat-card img{
+        width: 150px;
+        height:150px;
+        object-fit: cover;
+        border-radius:12px;
+    }
+    
+    .cat-card{
+        width: 200px;
+        height: 250px;
+        background-color:rgb(124, 217, 234);
+        border-radius:  20px;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        display: flex;
+        color:black;
+        
+    }
+    .cat-card:hover{
+        transform: scale(1.05);
+    }
+    
+     .deals{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        margin-bottom: 40px;
+        background: linear-gradient(to bottom,white,lightblue);
+        
+    }
+    .deals-cards{
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .deals-card img{
+        width: 150px;
+        height:150px;
+        object-fit: cover;
+        border-radius:12px;
+    }
+    
+    .deals-card{
+        width: 200px;
+        height: 250px;
+        background-color:rgba(124, 218, 234, 0.673);
+        border-radius:  20px;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        display: flex;
+        color:black;
+        
+    }
+    .deals-card:hover{
+        transform: scale(1.05);
+    }
     
